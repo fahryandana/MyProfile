@@ -1,0 +1,290 @@
+:root{
+    --warnadasar: #ffab3d;
+    --bg: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline:none;
+    border:none;
+    text-decoration:none;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    color: #fff;
+    min-height: 2500px;
+}
+
+/* UNTUK SETTING SETTING NAVBAR*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1,0.7);
+    border-bottom: 3px solid var(--warnadasar);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding-top: 1rem;
+}
+
+.navbar .logo-navbar{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    font-style: italic;
+}
+
+.navbar .logo-navbar span{
+    color: var(--warnadasar);
+}
+
+.navbar .navbar-nav a {
+    display: inline-block;
+    font-size: 1.4rem;
+    margin: 0 1rem;
+    color: #fff;
+}
+
+.navbar .navbar-nav a:hover{
+    color: var(--warnadasar);
+}
+
+.navbar .navbar-nav a::after{
+    content: '';
+    display: block;
+    border-bottom: 0.1rem solid var(--warnadasar);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+
+.navbar .navbar-nav a:hover::after{
+    transform: scaleX(0.8);
+}
+
+.navbar .navbar-extra a{
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover{
+    color: var(--warnadasar);
+}
+
+#garis-tiga {
+    display: none;
+
+}
+
+/* UNTUK HERO */
+
+.hero span{
+    color: var(--warnadasar);
+}
+.hero .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    font-size: 2rem;
+    color: #000000;
+    font-style: italic;
+}
+.hero p{
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background-image: url('../foto/bg.jpeg');
+        background-repeat:no-repeat;
+        background-size: cover;
+        background-position: center;
+        position: relative      
+}
+.hero .content .cta{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    font-size: 1.4rem;
+    color: #ffffff;
+    background-color: #1635ff;
+    border-radius: 0.6rem;
+}
+
+
+#suka:hover {
+    color: red;
+    transition: .3s;
+}
+
+/* S 2 */
+
+.about, .sosial-media, .Kontak h3{
+    padding: 8rem 7% 1.4rem;
+}
+
+.about h3, .sosial-media h3, .Kontak h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #000000;
+    font-style: italic;
+}
+
+
+.about h3 span, .sosial-media h3 span{
+    color: var(--warnadasar);
+}
+
+/* UNTUK FOTO -> TENTANG SAYA */
+.about-img img {
+    max-width: 100%; 
+    height: auto;
+    flex: 0 1 auto;
+    margin: -10rem 0;
+    transform: scale(0.5); 
+    border-radius: 46%;
+    margin-top: -20rem;
+}
+
+.about .content p {
+    text-align: center;
+    color: #4a4a4a;
+    font-style: italic;
+    font-size: 1.5rem;
+    text-align: justify;
+    margin-top: 1rem;
+}
+.about .content h2{
+    font-size: 1.6rem;
+    color: #000000;
+    text-align: center;
+    
+}
+
+
+/* UNTUK SOSIAL MEDIA */
+.sosial-media{
+    color: #000000;
+    text-align: center;
+    margin:0;
+}
+.sosial-media p {
+    font-size: 1.5rem;
+    margin-top: 5rem;
+}
+.sosial-media li{
+    cursor: pointer;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 8rem;
+    background-color: var(--warnadasar); padding: 5px; width: 20rem;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: italic;
+    color: #fff;
+}
+.sosial-media li a{
+    color: #fff;
+}
+
+/* UNTUK KONTAK */
+
+
+.Kontak H3{
+    margin-top: 20rem;
+}
+.Kontak a{
+    color: #000;
+    margin-left: 2rem;
+    margin-left: auto;
+    margin-left: 3rem;
+}
+
+.Kontak p{
+    color: #000;
+    font-size: 1.5rem;
+    text-align: left;
+    margin-top: -3rem;
+    margin-bottom: 17px;
+    margin-left: 25%;
+}
+
+/* gadget yang di pakek */
+
+/* laptop */
+
+@media (max-width:1366px){
+    html {
+        font-size: 75%;
+    }
+}
+.cta {
+    color: blue;    
+}
+/* Tablet */
+@media (max-width:750px){
+    html {
+        font-size: 62.5%;
+        
+    }
+    #garis-tiga{
+        display:inline-block;
+    }
+    .navbar .navbar-nav{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #ffffff;
+        width: 22rem;
+        height: 100vh;
+        transition: 0.4s;
+        
+    }
+    .navbar .navbar-nav.active{
+        right: 0;
+
+    }
+
+    .navbar .navbar-nav a{
+        color: var(--bg);
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+        color: #000000;
+        line-height: 4rem;
+    }
+
+    .navbar .navbar-nav a::after{
+        transform-origin: 0 0;
+    }
+
+    .navbar .navbar-nav a:hover::after{
+        transform: scaleX(0.3);
+    }
+
+    
+}
+/* Hp */
+@media (max-width:750px){
+    html {
+
+        font-size: 62.5%;
+        
+    }
+}
+
