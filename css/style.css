@@ -95,7 +95,7 @@ body{
     padding: 1.4rem 7%;
     max-width: 60rem;
     font-size: 2rem;
-    color: #000000;
+    color: #fff;
     font-style: italic;
 }
 .hero p{
@@ -171,7 +171,7 @@ body{
     font-size: 1.6rem;
     color: #000000;
     text-align: center;
-    margin-top:10rem;
+    margin-top: 7.5rem;
     
 }
 
